@@ -1,0 +1,8 @@
+services:
+  bot:
+    image: ghcr.io/hisbaan/ha-location-bot:latest
+    restart: unless-stopped
+    environment:
+      DATABASE_PATH: /app/data/ha-location-bot.db
+    volumes:
+      - ./data:/app/data

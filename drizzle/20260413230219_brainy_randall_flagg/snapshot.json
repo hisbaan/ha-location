@@ -1,0 +1,344 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "id": "f8dbddf6-5631-4074-b199-4312f993e970",
+  "prevIds": [
+    "131a9c67-7480-4650-8021-c8c23fe38d0a"
+  ],
+  "ddl": [
+    {
+      "name": "ha_connections",
+      "entityType": "tables"
+    },
+    {
+      "name": "live_location_messages",
+      "entityType": "tables"
+    },
+    {
+      "name": "tracked_entities",
+      "entityType": "tables"
+    },
+    {
+      "name": "viewer_permissions",
+      "entityType": "tables"
+    },
+    {
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "discord_user_id",
+      "entityType": "columns",
+      "table": "ha_connections"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "ha_base_url",
+      "entityType": "columns",
+      "table": "ha_connections"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "encrypted_access_token",
+      "entityType": "columns",
+      "table": "ha_connections"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": "'long_lived_token'",
+      "generated": null,
+      "name": "auth_type",
+      "entityType": "columns",
+      "table": "ha_connections"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "last_validated_at",
+      "entityType": "columns",
+      "table": "ha_connections"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": "CURRENT_TIMESTAMP",
+      "generated": null,
+      "name": "created_at",
+      "entityType": "columns",
+      "table": "ha_connections"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": "CURRENT_TIMESTAMP",
+      "generated": null,
+      "name": "updated_at",
+      "entityType": "columns",
+      "table": "ha_connections"
+    },
+    {
+      "type": "integer",
+      "notNull": false,
+      "autoincrement": true,
+      "default": null,
+      "generated": null,
+      "name": "id",
+      "entityType": "columns",
+      "table": "live_location_messages"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "owner_discord_user_id",
+      "entityType": "columns",
+      "table": "live_location_messages"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "channel_id",
+      "entityType": "columns",
+      "table": "live_location_messages"
+    },
+    {
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "guild_id",
+      "entityType": "columns",
+      "table": "live_location_messages"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "message_id",
+      "entityType": "columns",
+      "table": "live_location_messages"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "created_by_discord_user_id",
+      "entityType": "columns",
+      "table": "live_location_messages"
+    },
+    {
+      "type": "integer",
+      "notNull": true,
+      "autoincrement": false,
+      "default": "true",
+      "generated": null,
+      "name": "active",
+      "entityType": "columns",
+      "table": "live_location_messages"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "created_at",
+      "entityType": "columns",
+      "table": "live_location_messages"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "expires_at",
+      "entityType": "columns",
+      "table": "live_location_messages"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "updated_at",
+      "entityType": "columns",
+      "table": "live_location_messages"
+    },
+    {
+      "type": "text",
+      "notNull": false,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "discord_user_id",
+      "entityType": "columns",
+      "table": "tracked_entities"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "entity_id",
+      "entityType": "columns",
+      "table": "tracked_entities"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "friendly_name",
+      "entityType": "columns",
+      "table": "tracked_entities"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "entity_domain",
+      "entityType": "columns",
+      "table": "tracked_entities"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": "CURRENT_TIMESTAMP",
+      "generated": null,
+      "name": "created_at",
+      "entityType": "columns",
+      "table": "tracked_entities"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": "CURRENT_TIMESTAMP",
+      "generated": null,
+      "name": "updated_at",
+      "entityType": "columns",
+      "table": "tracked_entities"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "owner_discord_user_id",
+      "entityType": "columns",
+      "table": "viewer_permissions"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "viewer_discord_user_id",
+      "entityType": "columns",
+      "table": "viewer_permissions"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": null,
+      "generated": null,
+      "name": "access_tier",
+      "entityType": "columns",
+      "table": "viewer_permissions"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": "CURRENT_TIMESTAMP",
+      "generated": null,
+      "name": "created_at",
+      "entityType": "columns",
+      "table": "viewer_permissions"
+    },
+    {
+      "type": "text",
+      "notNull": true,
+      "autoincrement": false,
+      "default": "CURRENT_TIMESTAMP",
+      "generated": null,
+      "name": "updated_at",
+      "entityType": "columns",
+      "table": "viewer_permissions"
+    },
+    {
+      "columns": [
+        "owner_discord_user_id",
+        "viewer_discord_user_id"
+      ],
+      "nameExplicit": false,
+      "name": "viewer_permissions_owner_discord_user_id_viewer_discord_user_id_pk",
+      "entityType": "pks",
+      "table": "viewer_permissions"
+    },
+    {
+      "columns": [
+        "discord_user_id"
+      ],
+      "nameExplicit": false,
+      "name": "ha_connections_pk",
+      "table": "ha_connections",
+      "entityType": "pks"
+    },
+    {
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "name": "live_location_messages_pk",
+      "table": "live_location_messages",
+      "entityType": "pks"
+    },
+    {
+      "columns": [
+        "discord_user_id"
+      ],
+      "nameExplicit": false,
+      "name": "tracked_entities_pk",
+      "table": "tracked_entities",
+      "entityType": "pks"
+    }
+  ],
+  "renames": []
+}
